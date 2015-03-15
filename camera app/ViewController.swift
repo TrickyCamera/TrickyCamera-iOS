@@ -70,7 +70,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // UIボタンをViewに追加.
         self.view.addSubview(myButton)
         
-        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("machinegun", ofType: "mp3")!)
+        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bomb", ofType: "mp3")!)
         // auido を再生するプレイヤーを作成する
         var audioError:NSError?
         audioPlayer = AVAudioPlayer(contentsOfURL: audioPath, error:&audioError)
@@ -82,15 +82,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         audioPlayer!.delegate = self
         audioPlayer!.prepareToPlay()
-        
-        onClickMyButton(myButton)
+    // 起動時に撮影
+        //            onClickMyButton(myButton)
 
     }
 
     // ボタンイベント.
     func onClickMyButton(sender: UIButton){
         audioPlayer?.play()
-        sleep(3)
+        sleep(5)
         
         // ビデオ出力に接続.
         let myVideoConnection = myImageOutput.connectionWithMediaType(AVMediaTypeVideo)

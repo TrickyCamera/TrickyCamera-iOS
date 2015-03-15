@@ -15,6 +15,8 @@
 		458D42261AB3450200CA7F35 /* camera_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458D42251AB3450200CA7F35 /* camera_appTests.swift */; };
 		458D42301AB53A6000CA7F35 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458D422F1AB53A6000CA7F35 /* AudioToolbox.framework */; };
 		458D42321AB53E4B00CA7F35 /* machinegun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 458D42311AB53E4B00CA7F35 /* machinegun.mp3 */; };
+		458D42401AB54B7900CA7F35 /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 458D423E1AB54B7900CA7F35 /* bomb.mp3 */; };
+		458D42411AB54B7900CA7F35 /* firework.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 458D423F1AB54B7900CA7F35 /* firework.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		458D42251AB3450200CA7F35 /* camera_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera_appTests.swift; sourceTree = "<group>"; };
 		458D422F1AB53A6000CA7F35 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		458D42311AB53E4B00CA7F35 /* machinegun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = machinegun.mp3; path = sounds/machinegun.mp3; sourceTree = SOURCE_ROOT; };
+		458D423E1AB54B7900CA7F35 /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		458D423F1AB54B7900CA7F35 /* firework.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = firework.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +87,10 @@
 		458D420C1AB3450200CA7F35 /* camera app */ = {
 			isa = PBXGroup;
 			children = (
+				458D423E1AB54B7900CA7F35 /* bomb.mp3 */,
+				458D423F1AB54B7900CA7F35 /* firework.mp3 */,
 				458D42311AB53E4B00CA7F35 /* machinegun.mp3 */,
+				458D42331AB5473400CA7F35 /* sounds */,
 				458D420F1AB3450200CA7F35 /* AppDelegate.swift */,
 				458D42111AB3450200CA7F35 /* ViewController.swift */,
 				458D42131AB3450200CA7F35 /* Main.storyboard */,
@@ -117,6 +124,13 @@
 				458D42241AB3450200CA7F35 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		458D42331AB5473400CA7F35 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				458D42151AB3450200CA7F35 /* Main.storyboard in Resources */,
+				458D42411AB54B7900CA7F35 /* firework.mp3 in Resources */,
+				458D42401AB54B7900CA7F35 /* bomb.mp3 in Resources */,
 				458D421A1AB3450200CA7F35 /* LaunchScreen.xib in Resources */,
 				458D42171AB3450200CA7F35 /* Images.xcassets in Resources */,
 				458D42321AB53E4B00CA7F35 /* machinegun.mp3 in Resources */,
